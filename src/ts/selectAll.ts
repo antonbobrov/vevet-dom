@@ -22,7 +22,7 @@ export function selectAll<T extends SelectorAll> (
     parent?: Element | string,
 ): (
     T extends Element[] ? Element[] :
-        T extends Element ? Element[] : NodeList
+        T extends Element ? Element[] : NodeListOf<Element>
 ) {
 
     if (selector instanceof NodeList) {
