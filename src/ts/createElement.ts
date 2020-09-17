@@ -11,9 +11,9 @@ export interface CreateElementProp <T extends keyof HTMLElementTagNameMap> {
      */
     id?: string;
     /**
-     * Element attributes
+     * Element attributes (key, value)
      */
-    attr?: [string, string][];
+    attr?: string[][];
     /**
      * The parent element
      */
