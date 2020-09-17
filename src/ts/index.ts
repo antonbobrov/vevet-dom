@@ -7,6 +7,7 @@ import { selectOne, SelectorOne } from './selectOne';
 import { selectAll, SelectorAll } from './selectAll';
 import { inDOM } from './inDOM';
 import { createElement, CreateElementProp } from './createElement';
+import { addClass, removeClass, toggleClass } from './classes';
 
 export {
     insertAfter,
@@ -18,4 +19,5 @@ export {
     selectAll, SelectorAll,
     inDOM,
     createElement, CreateElementProp,
+    addClass, removeClass, toggleClass,
 };

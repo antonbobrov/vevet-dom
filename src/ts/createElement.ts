@@ -1,3 +1,5 @@
+import { addClass } from './classes';
+
 /**
  * Element's properties
  */
@@ -49,10 +51,7 @@ export function createElement <T extends keyof HTMLElementTagNameMap> (
 
     // add classes
     if (prop.class) {
-        const classNames = prop.class.split(' ');
-        classNames.forEach((name) => {
-            el.classList.add(name);
-        });
+        addClass(el, prop.class);
     }
 
     // add id
