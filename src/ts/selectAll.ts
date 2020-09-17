@@ -1,5 +1,6 @@
 import { isElement } from './isElement';
 import { selectOne } from './selectOne';
+import { HTMLElementTag } from './types';
 
 /**
  * Selector types
@@ -11,7 +12,7 @@ export type SelectorAll = string | NodeList | Element | Element[];
 /**
  * Select all DOM elements that match a query selector
  */
-export function selectAll<T extends SelectorAll> (
+export function selectAll<T extends SelectorAll | HTMLElementTag> (
     /**
      * Query selector
      */
@@ -22,7 +23,10 @@ export function selectAll<T extends SelectorAll> (
     parent?: Element | string,
 ): (
     T extends Element[] ? Element[] :
-        T extends Element ? Element[] : NodeListOf<Element>
+        T extends Element ? Element[] :
+            // @ts-ignore
+            T extends HTMLElementTag ? NodeListOf<HTMLElementTagNameMap[T]> :
+                NodeListOf<Element>
 ) {
 
     if (selector instanceof NodeList) {

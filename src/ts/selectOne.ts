@@ -1,5 +1,6 @@
 import { isElement } from './isElement';
 import { isWindow } from './isWindow';
+import { HTMLElementTag } from './types';
 
 
 
@@ -13,7 +14,7 @@ export type SelectorOne = string | Element | Window;
 /**
  * Select only one DOM element.
  */
-export function selectOne<T extends SelectorOne> (
+export function selectOne<T extends SelectorOne | HTMLElementTag> (
     /**
      * Query selector
      */
@@ -22,7 +23,12 @@ export function selectOne<T extends SelectorOne> (
      * A parent for the needed element
      */
     parent?: Element | string,
-): (T extends Window ? Window : (HTMLElement | Element | null)) {
+): (
+    T extends Window ?
+        Window :
+            T extends HTMLElementTag ? HTMLElementTagNameMap[T] :
+                (HTMLElement | Element | null)
+) {
 
     if (isWindow(selector)) {
         return selector as any;
