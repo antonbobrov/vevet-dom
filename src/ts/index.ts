@@ -6,6 +6,7 @@ import { isWindow } from './isWindow';
 import { selectOne, SelectorOne } from './selectOne';
 import { selectAll, SelectorAll } from './selectAll';
 import { inDOM } from './inDOM';
+import { createElement, CreateElementProp } from './createElement';
 
 export {
     insertAfter,
@@ -16,4 +17,5 @@ export {
     selectOne, SelectorOne,
     selectAll, SelectorAll,
     inDOM,
+    createElement, CreateElementProp,
 };
