@@ -25,7 +25,16 @@
     "url": "git+https://github.com/antonbobrov/vevet-dom.git"
   },
   "keywords": [
-    "keyword"
+    "vevet",
+    "DOM",
+    "utilities",
+    "utils",
+    "selector",
+    "classname",
+    "HTML",
+    "element",
+    "dom children",
+    "insertAfter"
   ],
   "author": "Anthony Bobrov <anton.bobrov@hotmail.com>",
   "license": "MIT",
