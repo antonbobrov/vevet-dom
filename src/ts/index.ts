@@ -8,6 +8,9 @@ import { selectAll, SelectorAll } from './selectAll';
 import { inDOM } from './inDOM';
 import { createElement, CreateElementProp } from './createElement';
 import { addClass, removeClass, toggleClass } from './classes';
+import {
+    ListenerElement, IAddEventListenerOptions, IAddEventListener, addEventListener, removeEventListener,
+} from './listeners';
 
 export {
     insertAfter,
@@ -20,4 +23,5 @@ export {
     inDOM,
     createElement, CreateElementProp,
     addClass, removeClass, toggleClass,
+    ListenerElement, IAddEventListenerOptions, IAddEventListener, addEventListener, removeEventListener,
 };

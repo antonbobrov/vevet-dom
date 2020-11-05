@@ -1,10 +1,14 @@
+/* eslint-disable no-alert */
 /* eslint-disable no-console */
 
 import '../styles/index.scss';
 
 import {
-    selectOne, insertAfter, removeChildren, isElement, isWindow, selectAll, inDOM,
+    selectOne, insertAfter, removeChildren, isElement, isWindow,
+    selectAll, inDOM, addEventListener,
 } from '../../src/ts/index';
+
+
 
 // select one element
 console.warn('select one element');
@@ -23,11 +27,15 @@ console.log(selectAll(document.querySelectorAll('*')));
 console.log(selectAll(selectOne('h1')));
 console.log(selectAll([selectOne('h1'), selectOne('h2')]));
 
+
+
 // insert after
 insertAfter(selectOne('h1'), selectOne('h2'));
 
 // remove children
 removeChildren(selectOne('.children'));
+
+
 
 // isElement
 console.warn('isElement');
@@ -46,3 +54,31 @@ console.warn('isDOM');
 console.log(`'h1' is in DOM: ${inDOM(selectOne('h1'))}`);
 const myEl = document.createElement('div');
 console.log(`'div' is in DOM: ${inDOM(myEl)}`);
+
+
+
+// add and remove event listeners
+
+const onceListenerSystem = selectOne('#listener-once-system');
+if (onceListenerSystem) {
+    addEventListener(onceListenerSystem, 'click', () => {
+        alert('click');
+    }, {
+        once: true,
+    });
+}
+
+const onceListenerVevet = selectOne('#listener-once-vevet');
+if (onceListenerVevet) {
+    const listener = addEventListener(onceListenerVevet, 'click', () => {
+        alert('click');
+        listener.remove();
+    });
+}
+
+const multipleListenerVevet = selectOne('#listener-multiple');
+if (multipleListenerVevet) {
+    addEventListener(multipleListenerVevet, 'click', () => {
+        alert('click');
+    });
+}
