@@ -34,7 +34,11 @@
     "HTML",
     "element",
     "dom children",
-    "insertAfter"
+    "insertAfter",
+    "event",
+    "listener",
+    "addEventListener",
+    "removeEventListener"
   ],
   "author": "Anthony Bobrov <anton.bobrov@hotmail.com>",
   "license": "MIT",
