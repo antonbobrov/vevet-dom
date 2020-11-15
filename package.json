@@ -1,6 +1,6 @@
 {
   "name": "vevet-dom",
-  "version": "0.0.14",
+  "version": "0.0.15",
   "description": "DOM utilities",
   "scripts": {
     "release": "npm publish",
