@@ -71,7 +71,7 @@
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_parentbyinstance_.html#parentbyinstance" class="tsd-kind-icon">parent<wbr>ByInstance</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="_parentbyinstance_.html#parentbyinstance" class="tsd-kind-icon">parent<wbr>ByInstance</a></li>
 							</ul>
 						</section>
 					</div>
@@ -79,17 +79,17 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
 					<a name="parentbyinstance" class="tsd-anchor"></a>
 					<h3>parent<wbr>ByInstance</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">parent<wbr>ByInstance<span class="tsd-signature-symbol">(</span>child<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Element</span>, instance<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, maxLevel<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, currentLevel<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Element</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span></li>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">parent<wbr>ByInstance&lt;T&gt;<span class="tsd-signature-symbol">(</span>child<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Element</span>, instance<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, maxLevel<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, currentLevel<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/antonbobrov/vevet-dom/blob/a3bf4a2/src/ts/parentByInstance.ts#L4">parentByInstance.ts:4</a></li>
+									<li>Defined in <a href="https://github.com/antonbobrov/vevet-dom/blob/06587d0/src/ts/parentByInstance.ts#L4">parentByInstance.ts:4</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -97,6 +97,12 @@
 									<p>Get the nearest parent element by instance.</p>
 								</div>
 							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Element</span></h4>
+								</li>
+							</ul>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -112,7 +118,7 @@
 									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> currentLevel: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Element</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -176,7 +182,7 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-function tsd-parent-kind-module">
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
 						<a href="_parentbyinstance_.html#parentbyinstance" class="tsd-kind-icon">parent<wbr>ByInstance</a>
 					</li>
 				</ul>
