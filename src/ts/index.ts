@@ -11,6 +11,7 @@ import { addClass, removeClass, toggleClass } from './classes';
 import {
     ListenerElement, IAddEventListenerOptions, IAddEventListener, addEventListener, removeEventListener,
 } from './listeners';
+import parentByInstance from './parentByInstance';
 
 export {
     insertAfter,
@@ -24,4 +25,5 @@ export {
     createElement, CreateElementProp,
     addClass, removeClass, toggleClass,
     ListenerElement, IAddEventListenerOptions, IAddEventListener, addEventListener, removeEventListener,
+    parentByInstance,
 };
