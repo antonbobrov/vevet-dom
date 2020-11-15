@@ -1,6 +1,6 @@
 {
   "name": "vevet-dom",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "description": "DOM utilities",
   "scripts": {
     "release": "npm publish",
@@ -42,8 +42,7 @@
   ],
   "author": "Anthony Bobrov <anton.bobrov@hotmail.com>",
   "license": "MIT",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "@babel/cli": "^7.10.5",
     "@babel/core": "^7.11.4",
