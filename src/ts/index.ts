@@ -12,6 +12,7 @@ import {
     ListenerElement, IAddEventListenerOptions, IAddEventListener, addEventListener, removeEventListener,
 } from './listeners';
 import parentByInstance from './parentByInstance';
+import parentByTagName from './parentByTagName';
 
 export {
     insertAfter,
@@ -26,4 +27,5 @@ export {
     addClass, removeClass, toggleClass,
     ListenerElement, IAddEventListenerOptions, IAddEventListener, addEventListener, removeEventListener,
     parentByInstance,
+    parentByTagName,
 };
