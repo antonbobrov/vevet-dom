@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>&quot;inDOM&quot; | vevet-dom</title>
+	<title>&quot;parentByTagName&quot; | vevet-dom</title>
 	<meta name="description" content="Documentation for vevet-dom">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -54,10 +54,10 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="_indom_.html">&quot;inDOM&quot;</a>
+					<a href="_parentbytagname_.html">&quot;parentByTagName&quot;</a>
 				</li>
 			</ul>
-			<h1>Module &quot;inDOM&quot;</h1>
+			<h1>Module &quot;parentByTagName&quot;</h1>
 		</div>
 	</div>
 </header>
@@ -71,7 +71,7 @@
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_indom_.html#indom" class="tsd-kind-icon">inDOM</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_parentbytagname_.html#parentbytagname" class="tsd-kind-icon">parent<wbr>ByTag<wbr>Name</a></li>
 							</ul>
 						</section>
 					</div>
@@ -80,30 +80,39 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-					<a name="indom" class="tsd-anchor"></a>
-					<h3>inDOM</h3>
+					<a name="parentbytagname" class="tsd-anchor"></a>
+					<h3>parent<wbr>ByTag<wbr>Name</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">inDOM<span class="tsd-signature-symbol">(</span>el<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Element</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+						<li class="tsd-signature tsd-kind-icon">parent<wbr>ByTag<wbr>Name<span class="tsd-signature-symbol">(</span>child<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Element</span>, tagName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, maxLevel<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, currentLevel<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Element</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/antonbobrov/vevet-dom/blob/a3bf4a2/src/ts/inDOM.ts#L6">inDOM.ts:6</a></li>
+									<li>Defined in <a href="https://github.com/antonbobrov/vevet-dom/blob/a3bf4a2/src/ts/parentByTagName.ts#L4">parentByTagName.ts:4</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Check if an element is in the DOM</p>
+									<p>Get the nearest parent element by tagName.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>el: <span class="tsd-signature-type">Element</span></h5>
+									<h5>child: <span class="tsd-signature-type">Element</span></h5>
+								</li>
+								<li>
+									<h5>tagName: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> maxLevel: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = Infinity</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> currentLevel: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Element</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -124,7 +133,7 @@
 					<li class=" tsd-kind-module">
 						<a href="_createelement_.html">&quot;create<wbr>Element&quot;</a>
 					</li>
-					<li class="current tsd-kind-module">
+					<li class=" tsd-kind-module">
 						<a href="_indom_.html">&quot;inDOM&quot;</a>
 					</li>
 					<li class=" tsd-kind-module">
@@ -148,7 +157,7 @@
 					<li class=" tsd-kind-module">
 						<a href="_parentbyinstance_.html">&quot;parent<wbr>ByInstance&quot;</a>
 					</li>
-					<li class=" tsd-kind-module">
+					<li class="current tsd-kind-module">
 						<a href="_parentbytagname_.html">&quot;parent<wbr>ByTag<wbr>Name&quot;</a>
 					</li>
 					<li class=" tsd-kind-module">
@@ -168,7 +177,7 @@
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="_indom_.html#indom" class="tsd-kind-icon">inDOM</a>
+						<a href="_parentbytagname_.html#parentbytagname" class="tsd-kind-icon">parent<wbr>ByTag<wbr>Name</a>
 					</li>
 				</ul>
 			</nav>
