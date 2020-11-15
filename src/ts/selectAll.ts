@@ -7,6 +7,12 @@ import { HTMLElementTag } from './types';
  */
 export type SelectorAll = string | NodeList | Element | Element[];
 
+/**
+ * Selector types
+ * @ignore
+ */
+type NodeListByTagName<T extends HTMLElementTag> = NodeListOf<HTMLElementTagNameMap[T]>;
+
 
 
 /**
@@ -25,7 +31,7 @@ export function selectAll<T extends SelectorAll | HTMLElementTag> (
     T extends Element[] ? Element[] :
         T extends Element ? Element[] :
             // @ts-ignore
-            T extends HTMLElementTag ? NodeListOf<HTMLElementTagNameMap[T]> :
+            T extends HTMLElementTag ? NodeListByTagName<T> :
                 NodeListOf<Element>
 ) {
 
