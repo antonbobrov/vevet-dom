@@ -16,7 +16,6 @@ export default function parentByInstance (
     maxLevel = Infinity,
     /**
      * Current level
-     * @ignore
      */
     currentLevel = 0,
 ): Element | false {
