@@ -7,7 +7,7 @@ export default function parentByTagName (
      */
     child: Element,
     /**
-     * Classname of the parent
+     * Tagname of the parent
      */
     tagName: string,
     /**
